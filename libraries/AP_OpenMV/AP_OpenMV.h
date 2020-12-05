@@ -30,7 +30,7 @@ public:
     void init(const AP_SerialManager &serial_manage);
 
     // update flight control mode. The control mode is vehicle type specific
-    void update(void);
+    bool update(void);
 
     uint8_t cx;
     uint8_t cy;
