@@ -317,6 +317,7 @@ void Copter::update_batt_compass(void)
 void Copter::update_OpenMV(void)
 {
     // simulation
+    /*
     bool sim_openmv_new_data = false;
     static uint32_t last_sim_new_data_time_ms = 0;
     if(control_mode != GUIDED) {
@@ -339,6 +340,7 @@ void Copter::update_OpenMV(void)
         openmv.cy = 60;
     }
 
+    */
     // end of simulation code
 
     static uint32_t last_set_pos_target_time_ms = 0;
