@@ -345,7 +345,10 @@ void Copter::update_OpenMV(void)
 
     static uint32_t last_set_pos_target_time_ms = 0;
     Vector3f target = Vector3f(0, 0, 0);
-    if(openmv.update() || sim_openmv_new_data) {
+    if(openmv.update()
+           // || sim_openmv_new_data
+      )
+        {
         Log_Write_OpenMV();
 
         if(control_mode != GUIDED)
